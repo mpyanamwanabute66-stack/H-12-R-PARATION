@@ -1,0 +1,165 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+    font-size:19px;
+    scroll-behavior:smooth;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(135deg,#0a1f44,#1e3c72);
+    color:white;
+    padding:70px 20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:42px;
+}
+
+header p{
+    margin-top:15px;
+}
+
+/* MENU */
+nav{
+    background:#111;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    margin:12px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:#1e90ff;
+}
+
+/* SECTIONS */
+section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+h2{
+    margin-bottom:30px;
+    color:#0a1f44;
+    font-size:30px;
+}
+
+/* CARDS */
+.card{
+    background:white;
+    padding:30px;
+    margin:20px auto;
+    max-width:550px;
+    border-radius:15px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card h3{
+    font-size:23px;
+    margin-bottom:10px;
+}
+
+/* GALLERY */
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.gallery img{
+    width:260px;
+    border-radius:12px;
+}
+
+/* FORM */
+form{
+    max-width:450px;
+    margin:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:14px;
+    margin:12px 0;
+    border-radius:6px;
+    border:1px solid #ccc;
+    font-size:17px;
+}
+
+button{
+    background:#1e90ff;
+    color:white;
+    padding:14px 25px;
+    border:none;
+    border-radius:6px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    background:#0a1f44;
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:18px 20px;
+    border-radius:50%;
+    font-size:24px;
+    text-decoration:none;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    body{
+        font-size:21px;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+        font-size:20px;
+    }
+
+    header h1{
+        font-size:34px;
+    }
+
+    h2{
+        font-size:26px;
+    }
+
+}
